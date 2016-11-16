@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+
+<body>
+<span style="cursor:crosshair">
+	<!--- Got Fonts from: http://www.cssfontstack.com/Optima -->
+
+
+<div>
+        <img class="back-image" src="../background.jpg">
+    </div>
+
+<div class="header">
+	<header>
+		 <h1> Week FOUR. </h1> 
+		<h2> Electronics Design </h2>
+		<h3> <a href="http://fab.cba.mit.edu/classes/4.140/section.Harvard/people/Swaby/index.html"> Main Page </a> </h3>
+	</header>
+		
+	
+
+</div>
+
+<div class="body">
+	
+	<h1> Designing the Board</h1>
+	<h2> Schematic </h2>
+	<p> So, the process began with using Eagle software, a very specific tool to designing circuit boards to, well, design a circuit board. Upon adding the fab.lbr into Eagle, I selected all my needed components, from Resistors, Capacitors, Resonator, LED, Switch, FabISP, and ATTINY44, etc., I connected all of my components via the Wires Command, and was left with a Schematic that looks a little something like this:</p>
+	
+	<img src="files/schematic.png" width="800px" height="auto">
+
+	<h2> Board </h2>
+	<p> After clicking on the "Board" function, I then arranged my board components in a way that led to the least amount of crossover for wires. I then hit "Autoroute" with a High level of effort (though, I am not sure what it would alternatively look like if I decided to use Medium or Low Effort. After moving some wires to create my desired shape and to allow the soldering process down the road a little less strenuous (aka making sure some parts weren't too close together), I hid all of the layers, except the top, and VOILA! </p>
+
+	<img src="files/board.png" width="300px" height="auto">
+
+	<h1> Creating the Trace</h1>
+
+	<p> After exporting this file with a <em> DPI</em> of <strong> 1500 </strong> and Monochrome, I then imported it into GIMP, to create my trace file and add some character to the board itself. Even though I was going for a clock in the visual side of things, it ended up looking more like a cute bear :) </p>
+	
+	<img src="files/clockedoutcircuit.png" width="300px" height="auto">
+	<img src="files/clockedouttrace.png" width="300px" height="auto">
+
+	
+	<h1> Milling the Board: Roland Mill MDX-20 </h1>
+
+	<p> The funniest part about this week was that using the software (which if you haven't gathered by the past weeks, always gives me trouble) went rather smoothly. Instead, the physical part of the fabrication is what brought me immense frustration. All a part of the process, I guess.....</p>
+
+	<img src="files/screensettings.png" width="400px" height="auto">
+
+	<p> Following four different iterations of this process, and with the help of lovely staff members/TA's/peers, I was finally successful. The challenges I encountered with this machine were related to Scale and Cut Depth/Zeroing the 1/64" bit. Before my final successful attempt, this is what I was left with! </p> 
+
+	<img src="files/xyzfail.png" width="300px" height="auto">
+	<img src="files/xyfail.png" width="300px" height="auto">
+	<img src="files/xyfailagain.png" width="300px" height="auto">
+	<img src="files/zfail.png" width="300px" height="auto">
+
+	<p> After feelings of defeat, I left and returned again another day. When I came in, I set up the machine, and a lovely TA helped me acquire a larger piece of copper, so that I wouldn't be confined into a small surface area, running the risk of my board being milled off the copper plate. And after the first go around of the board, I was met with success!!! Cue the applause!) </p>
+
+	<p> I loaded up the 1/32" bit and began the trace--however, before the bit even made it halfway around the first trace, it punctured through the board and the copper plate was ripped off the sacrficial layer :( </p>
+
+
+	<img src="files/cutfail.png" width="400px" height="auto">
+
+	<p> Upon great triumpth, I added more double stick tape on the bottom of the plate, loaded up the settings and to my surprise... </p>
+
+	<img src="files/restickreset.png" width="400px" height="auto">
+
+	<h2> WEEEEEEEEEEEEEEEEE!!!!!! </h2>
+
+
+	<h1> Soldering </h1>
+	<p> So, I gathered up all of my parts, including the button and a Blue LED, consulted my Eagle trace and after the relaxing processing that is soldering:</p>
+
+	<img src="files/solder.png" width="400px" height="auto"> <img src="files/solder2.png" width="400px" height="auto">
+
+	<h1> Bag it Up and Be Gone </h1>
+
+	<p> I didn't get a chance to program my board, but hopefully when the time comes I will be successful. *fingers crossed* In the meantime my board is chilling like:</p>
+
+	<img src="files/bagged.png">
+
+	<footer> 
+		<a href="http://www.manarswaby.com"> all rights reserved. 2016. </a> 
+	</footer>
+</span><br>
+</body>
+ 			
+</html>
